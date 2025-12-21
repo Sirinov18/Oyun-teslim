@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.Container-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.Box {
+    width: 1160px;
+    height: 150px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.Box h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+.Button {
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.Button .button-1 button {
+    width: 370px;
+    height: 100px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.Button .button-2 button {
+    width: 370px;
+    height: 100px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.Button .button-3 button {
+    width: 370px;
+    height: 100px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
