@@ -4,8 +4,6 @@
     box-sizing: border-box;
 
 }
-<<<<<<< HEAD
-=======
 
 :root {
     --bg-pos: 50%;
@@ -40,24 +38,16 @@ body > * {
     z-index: 1;
 }
 
->>>>>>> 0b0e296 (clean)
 .Container-box {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
-<<<<<<< HEAD
-.Box {
-    width: 1160px;
-    height: 150px;
-    background-color: #3498db;
-=======
 
 .Box {
     width: 1160px;
     height: 200px;
     background-color: rgba(236, 231, 231, 0.319);
->>>>>>> 0b0e296 (clean)
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -65,13 +55,6 @@ body > * {
 
 }
 
-<<<<<<< HEAD
-.Box h1 {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-=======
 .Box video {
     width: 1160px;
     height: 200px;
@@ -83,7 +66,6 @@ body > * {
 .Box h1 {
     display: flex;
     color: white;
->>>>>>> 0b0e296 (clean)
     font-family: Arial, sans-serif;
     text-decoration: none;
 }
@@ -94,12 +76,6 @@ body > * {
     gap: 25px;
 }
 
-<<<<<<< HEAD
-.Button .button-1 button {
-    width: 370px;
-    height: 100px;
-    background-color: #2ecc71;
-=======
 /* Remove link underlines and purple lines */
 .Button a {
     text-decoration: none;
@@ -121,21 +97,11 @@ body > * {
 .Button .button-1 button {
     width: 570px;
     height: 175px;
->>>>>>> 0b0e296 (clean)
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-<<<<<<< HEAD
-
-}
-
-.Button .button-2 button {
-    width: 370px;
-    height: 100px;
-    background-color: #2ecc71;
-=======
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
@@ -199,26 +165,11 @@ body > * {
 .Button .button-2 button {
     width: 570px;
     height: 175px;
->>>>>>> 0b0e296 (clean)
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-<<<<<<< HEAD
-
-}
-
-.Button .button-3 button {
-    width: 370px;
-    height: 100px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-=======
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
@@ -275,5 +226,4 @@ body > * {
     margin: 0;
     margin-top: 75px;
     align-self: flex-start;
->>>>>>> 0b0e296 (clean)
 }
