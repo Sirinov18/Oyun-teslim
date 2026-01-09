@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --bg-pos: 50%;
+}
+
+body {
+    background: url("image/BG-Veyron.png.jpeg") no-repeat center var(--bg-pos);
+    background-size: 115% 115%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Brightened and blurred background overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("image/BG-Veyron.png.jpeg") no-repeat center var(--bg-pos);
+    background-size: 115% 115%;
+    filter: brightness(1.7) blur(5px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Ensure content is above the background */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+.Container-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.Box {
+    width: 1160px;
+    height: 200px;
+    background-color: rgba(236, 231, 231, 0.319);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.Box video {
+    width: 1160px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.Box h1 {
+    display: flex;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+.Button {
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+/* Remove link underlines and purple lines */
+.Button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Button a:visited {
+    color: inherit;
+}
+
+.Button a:hover {
+    text-decoration: none;
+}
+
+.Button a:active {
+    text-decoration: none;
+}
+
+.Button .button-1 button {
+    width: 570px;
+    height: 175px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+.Button .button-1 .account-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Gray version (default) */
+.Button .button-1 .account-icon.icon-gray {
+    filter: grayscale(100%) brightness(0.6);
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Glow version (hidden by default, can be shown on hover or via class) */
+.Button .button-1 .account-icon.icon-glow {
+    filter: grayscale(100%) brightness(0.8) drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    opacity: 0;
+    z-index: 2;
+}
+
+.Button .button-1 button:hover .account-icon.icon-gray {
+    opacity: 0;
+}
+
+.Button .button-1 button:hover .account-icon.icon-glow {
+    opacity: 1;
+}
+
+/* Active glow state (can be toggled via JavaScript) */
+.Button .button-1 button.active .account-icon.icon-gray {
+    opacity: 0;
+}
+
+.Button .button-1 button.active .account-icon.icon-glow {
+    opacity: 1;
+    filter: grayscale(100%) brightness(1) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+.Button .button-1 p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 75px;
+    align-self: flex-start;
+}
+
+
+
+.Button .button-2 button {
+    width: 570px;
+    height: 175px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+.Button .button-2 .console-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Gray version (default) */
+.Button .button-2 .console-icon.icon-gray {
+    filter: grayscale(100%) brightness(0.6);
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Glow version (hidden by default, can be shown on hover or via class) */
+.Button .button-2 .console-icon.icon-glow {
+    filter: grayscale(100%) brightness(0.8) drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    opacity: 0;
+    z-index: 2;
+}
+
+.Button .button-2 button:hover .console-icon.icon-gray {
+    opacity: 0;
+}
+
+.Button .button-2 button:hover .console-icon.icon-glow {
+    opacity: 1;
+}
+
+/* Active glow state (can be toggled via JavaScript) */
+.Button .button-2 button.active .console-icon.icon-gray {
+    opacity: 0;
+}
+
+.Button .button-2 button.active .console-icon.icon-glow {
+    opacity: 1;
+    filter: grayscale(100%) brightness(1) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+.Button .button-2 p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 75px;
+    align-self: flex-start;
+}
