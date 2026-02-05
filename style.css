@@ -33,7 +33,7 @@ body::before {
 }
 
 /* Ensure content is above the background */
-body > * {
+body>* {
     position: relative;
     z-index: 1;
 }
@@ -111,6 +111,7 @@ body > * {
     padding: 20px;
     position: relative;
 }
+
 .Button .button-1 .account-icon {
     font-size: 48px;
     margin-bottom: 10px;
@@ -152,6 +153,7 @@ body > * {
     opacity: 1;
     filter: grayscale(100%) brightness(1) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
+
 .Button .button-1 p {
     font-size: 24px;
     font-weight: bold;
@@ -179,6 +181,7 @@ body > * {
     padding: 20px;
     position: relative;
 }
+
 .Button .button-2 .console-icon {
     font-size: 48px;
     margin-bottom: 10px;
@@ -220,10 +223,80 @@ body > * {
     opacity: 1;
     filter: grayscale(100%) brightness(1) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
+
 .Button .button-2 p {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
     margin-top: 75px;
     align-self: flex-start;
+}
+
+.box {
+    width: 1160px;
+    padding: 30px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    margin-top: 20px;
+}
+
+.box h3 {
+    color: #aaa;
+    font-family: Arial;
+    margin-bottom: 8px;
+}
+
+.box input,
+.box select {
+    width: 100%;
+    height: 45px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0 15px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.box input::placeholder {
+    color: #666;
+    
+}
+
+.box select {
+    cursor: pointer;
+}
+
+.box button {
+    width: 100%;
+    height: 50px;
+    background: #2196f3;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #1e88e5;
+}
+
+/* second box */
+
+.box--2 {
+    width: 1160px;
+    height: 500px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    margin-top: 20px;
+}
+.Button button.active {
+    box-shadow:
+        0 0 15px rgba(251, 251, 251, 0.9),
+        0 0 35px rgba(243, 243, 243, 0.8),
+        inset 0 0 10px rgba(0,0,0,0.6);
 }

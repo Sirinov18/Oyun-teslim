@@ -39,4 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+document.querySelectorAll('.Button button').forEach(btn => {
+    btn.addEventListener('click', () => {
+
+        document.querySelectorAll('.Button button').forEach(b => {
+            b.classList.remove('active');
+        });
+
+        btn.classList.add('active');
+    });
+});
+
+
 
