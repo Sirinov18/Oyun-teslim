@@ -14,35 +14,38 @@
             <video autoplay muted loop>
                 <source src="../Video/Veyron-store1.mp4" type="video/mp4">
             </video>
-            <h1></h1>
         </div>
 
+        <!-- ===== NAVIGATION BUTTONS ===== -->
         <div class="Button">
             <div class="button-1">
-                <button>
+                <button id="accountButton" class="nav-button active" data-section="account">
                     <span class="account-icon icon-gray">👤</span>
                     <span class="account-icon icon-glow">👤</span>
                     <p>Hesab</p>
                 </button>
             </div>
             <div class="button-2">
-                <button>
+                <button id="guardButton" class="nav-button" data-section="guard">
                     <span class="console-icon icon-gray">🎮</span>
                     <span class="console-icon icon-glow">🎮</span>
                     <p>Guard</p>
                 </button>
             </div>
-
         </div>
-        <div class="box">
-            <h3>Kod</h3>
 
-            <input type="search" placeholder="Kodunuzu daxil edin">
+        <!-- ===== ACCOUNT SECTION ===== -->
+        <div class="box account-section active" id="accountSection">
+            <h3>📋 Hesab Bölməsi</h3>
+            <div class="input-container">
+                <input type="text" id="accountCode" placeholder="Kodunuzu daxil edin" class="code-input">
+                <span id="accountIcon" class="validation-icon"></span>
+            </div>
+            <button id="accountValidateBtn" class="validate-btn">Yoxla</button>
 
-            <h3>Oyun Seçin</h3>
-
-            <select>
-                <option>Oyun Seçin</option>
+            <h4>Oyun Seçin</h4>
+            <select id="accountGameSelect" class="game-select">
+                <option value="">Oyun Seçin</option>
                 <option>Assetto Corsa</option>
                 <option>Batman Arkham Asylum GOTY Edition</option>
                 <option>Batman Arkham City Goty</option>
@@ -80,14 +83,69 @@
                 <option>The Last of Us Part I</option>
                 <option>The Witcher 3: Wild Hunt</option>
             </select>
-
-            <button>Tələb et</button>
+            <button id="accountRequestBtn" class="request-btn">Tələb et</button>
         </div>
 
-        <div class="box--2"></div>
+        <!-- ===== GUARD SECTION ===== -->
+        <div class="box guard-section" id="guardSection">
+            <h3>🛡️ Guard Bölməsi</h3>
+            <div class="input-container">
+                <input type="text" id="guardCode" placeholder="Kodunuzu daxil edin" class="code-input">
+                <span id="guardIcon" class="validation-icon"></span>
+            </div>
+            <button id="guardValidateBtn" class="validate-btn">Yoxla</button>
 
+            <h4>Oyun Seçin</h4>
+            <select id="guardGameSelect" class="game-select">
+                <option value="">Oyun Seçin</option>
+                <option>Assetto Corsa</option>
+                <option>Batman Arkham Asylum GOTY Edition</option>
+                <option>Batman Arkham City Goty</option>
+                <option>Batman Arkham Knight</option>
+                <option>Black 4 Blood</option>
+                <option>Buckshot Roulette</option>
+                <option>Cyberpunk 2077</option>
+                <option>Dark Souls 2</option>
+                <option>Dark Souls 3</option>
+                <option>Dying Light</option>
+                <option>Don't Starve</option>
+                <option>Euro Track Simulator 2</option>
+                <option>Elden Ring</option>
+                <option>EA SPORTS FC™ 25</option>
+                <option>Forza Horizon 5</option>
+                <option>Ghost of Tsushima</option>
+                <option>Garry's Mod</option>
+                <option>God of War Ragnarök</option>
+                <option>Half Life 2</option>
+                <option>Hogwarts Legacy</option>
+                <option>Killing Floor 2</option>
+                <option>Left 4 Dead</option>
+                <option>Left 4 Dead 2</option>
+                <option>Life is Strange</option>
+                <option>Life is Strange 2</option>
+                <option>Mafia 2 Definitive Edition</option>
+                <option>Mafia 3 Definitive Edition</option>
+                <option>MiSide</option>
+                <option>Metro Last Light Complete Edition</option>
+                <option>Portal</option>
+                <option>Postal</option>
+                <option>Red Dead Redemption 2</option>
+                <option>Spiderman Miles Morales</option>
+                <option>The Forest</option>
+                <option>The Last of Us Part I</option>
+                <option>The Witcher 3: Wild Hunt</option>
+            </select>
+            <button id="guardRequestBtn" class="request-btn">Tələb et</button>
+        </div>
 
+        <!-- ===== RESULT / INFO BOX (SECOND BOX) ===== -->
+        <div class="box--2" id="resultBox">
+            <div class="result-placeholder" id="resultPlaceholder">
+                Kod və oyun əlaqəsi burada göstəriləcək.
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
