@@ -1,0 +1,51 @@
+/* ================= PHONE ONLY ================= */
+@media (max-width:600px){
+
+.Container-box{
+    padding:10px;
+}
+
+.Box,
+.Box video{
+    width:100%;
+    height:160px;
+}
+
+.Button{
+    display:flex;
+    gap:10px;
+}
+
+.Button .button-1 button,
+.Button .button-2 button{
+    width:50%;
+    height:120px;
+}
+
+.box,
+.box--2{
+    width:100%;
+    padding:15px;
+}
+
+}
+
+/* ================= TABLET ================= */
+@media (min-width:601px) and (max-width:1024px){
+
+.Box,
+.Box video{
+    width:100%;
+}
+
+.Button .button-1 button,
+.Button .button-2 button{
+    width:100%;
+}
+
+.box,
+.box--2{
+    width:100%;
+}
+
+}
